@@ -31,7 +31,7 @@ $ git commit --amend -m"<comment>" # Sovrascrive l'ultima commit effettuata, uti
 I files in verde sono gli **staged files**, quelli rossi sono quelli in attesa di essere aggiunti alla staging area
 :::
 
-## git diff
+## git diff: vedere le modifiche effettuate
 
 Git ci permette di vedere le **differenze** tra i files della working directory e la staging area (molti editor/IDE supportano Git e forniscono uno strumento grafico per vedere questo, naturalmente essi si appoggiano al comando fornito da git).
 ```sh
@@ -40,7 +40,7 @@ $ git diff <filename> # Visualizza la lista dei cambiamenti di un file rispetto 
 
 ![git-screenshot-02](./assets/git-screenshot-02.png)
 
-## git log
+## git log: lo storico
 
 Le commit possono essere viste grazie ad uno **storico** (come vedremo, lo storico può essere sia locale che remoto)
 
