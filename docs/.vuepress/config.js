@@ -34,7 +34,9 @@ function getGitSidebar (groupA) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        ''
+        '',
+        './backtracking/',
+        './branching/',
       ]
     }
   ]
