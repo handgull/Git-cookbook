@@ -13,6 +13,10 @@ Possiamo semplificare (di molto) il workflow di git dividendolo in 3 parti:
 
 > NOTA: la **Working Directory** è quindi la directory del progetto nello stato attuale
 ```sh
+# Primo utilizzo di git: configurare i dati relativi all'autore
+$ git config --global user.name "Nome Cognome"
+$ git config --global user.email indirizzo@ema.il
+
 $ git init # init = initialize, inizializza tutti gli strumenti necessari al versioning (nella cartella .git)
 $ git status # Visualizza lo stato del branch
 $ git add <filename> # Aggiunge le modifiche relative al file/ai file alla staging area sopra citata

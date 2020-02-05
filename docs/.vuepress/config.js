@@ -41,7 +41,8 @@ function getGitSidebar (groupA) {
         './backtracking/',
         './branching/',
         './teamwork/',
-        '../git/jam-stack/'
+        './git-server/',
+        './jam-stack/'
       ]
     }
   ]
@@ -59,6 +60,7 @@ function getIntroSidebar (groupA) {
         '../git/backtracking/',
         '../git/branching/',
         '../git/teamwork/',
+        '../git/git-server/',
         '../git/jam-stack/'
       ]
     }
