@@ -1,4 +1,5 @@
 # Backtracking: ritornare sui propri passi
+
 ## git show e head commit
 
 `HEAD` identifica la commit in cui si è attualmente (spesso coincide con l'ultima commit dello storico, ma non è detto)

@@ -59,3 +59,5 @@ Screenshot di una sezione dello storico in modalità grafo:
 :::tip
 In arancione possiamo vedere un codice alfanumerico di 40 caratteri, questo è l'**hash** o **SHA** della commit e viene usato come identificativo per riferirsi alla commit.
 :::
+
+[git log ed i branch](./branching#parentesi-riguardo-git-log)
