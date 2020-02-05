@@ -23,5 +23,5 @@ Come si vede nell'immagine qui sotto `git log` di default mostra solo lo storico
 
 ## git merge
 :::tip
-Quando possibile appoggiarsi sempre ad una soluzione grafica per i merge, in modo da gestire con più facilità i possibili conflitti.
+Quando possibile appoggiarsi sempre ad una soluzione grafica per i merge, in modo da gestire con più facilità i possibili **conflitti**.
 :::
