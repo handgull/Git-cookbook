@@ -25,7 +25,6 @@ $ git add -A # Aggiunge tutte le modifiche pendenti alla staging area
 $ git commit -m"<comment>" # Salva permanentemente come commit le modifiche
 $ git commit --amend -m"<comment>" # Sovrascrive l'ultima commit effettuata, utile per mantenere la history pulita e chiara in caso di piccole sviste
 ```
-
 > **Convenzioni riguardanti i commenti**:<br>
 > - Dovrebbero essere in [Present Tense](https://learnenglish.britishcouncil.org/english-grammar-reference/present-tense)
 > - Non dovrebbero superare i **50 caratteri**
@@ -34,6 +33,9 @@ $ git commit --amend -m"<comment>" # Sovrascrive l'ultima commit effettuata, uti
 
 :::tip
 I files in verde sono gli **staged files**, quelli rossi sono quelli in attesa di essere aggiunti alla staging area
+:::
+:::tip
+Al posto dei nomi dei files volendo si possono usare le [wildcards](https://www.tecmint.com/use-wildcards-to-match-filenames-in-linux/) offerte da bash!
 :::
 
 ## git diff: vedere le modifiche effettuate
