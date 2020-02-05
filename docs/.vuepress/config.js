@@ -37,6 +37,7 @@ function getGitSidebar (groupA) {
         '',
         './backtracking/',
         './branching/',
+        './teamwork/'
       ]
     }
   ]
