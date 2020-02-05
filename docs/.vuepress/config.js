@@ -9,10 +9,12 @@ module.exports = {
     editLinkText: 'Help us improve this page!',
     lastUpdated: 'Last Updated',
     nav: [
+      { text: 'Introduzione', link: '/intro/' },
       { text: 'Git', link: '/git/' }
     ],
     sidebar: {
-      '/git/': getGitSidebar('Git')
+      '/git/': getGitSidebar('Git'),
+      '/intro/': getIntroSidebar('Introduzione')
     },
     smoothScroll: true
   },
@@ -34,10 +36,28 @@ function getGitSidebar (groupA) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
+        '../intro/',
         '',
         './backtracking/',
         './branching/',
         './teamwork/'
+      ]
+    }
+  ]
+}
+
+function getIntroSidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        '',
+        '../git/',
+        '../git/backtracking/',
+        '../git/branching/',
+        '../git/teamwork/'
       ]
     }
   ]

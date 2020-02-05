@@ -1,0 +1,17 @@
+# Introduzione al versioning
+
+Tutto il software che viene scritto passa attraverso diverse versioni: ne creiamo una quando editiamo un ﬁle sorgente,ne creiamo diverse versioni all’interno di un ciclo di sviluppo, dalle versioni di test contenenti possibilmente codice per il debug ﬁno alle versioni alpha, beta e ﬁnali;<br> creiamo versioni diverse per diverse piattaforme e creiamo diversi **rilasci** di prodotto.<br>
+Il versionamento(versioning) del codice, o controllo delle versioni(**version control**), è la pratica che consente di gestire e **tenere traccia** di tutte queste versioni, consentendo di recuperare una vecchia versione del software, per esempio per risolvere un bug introdotto nelle versioni più recenti,o di far convivere più versioni per esesempio la versione in uso presso i clienti e la nuova versione in corso di sviluppo per il prossimo rilascio.<br>
+Tipicamente gli strumenti che si usano per il versionamento del codice **facilitano** anche lo **sviluppo concorrente** da parte di più programmatori,facilitando la fusione dei vari contributi e il lavoro di gruppo.<br>
+Gli strumenti per il versionamento del codice si preoccupano di gestire versioni multiple di documenti, e programmi,e sebbene siano particolarmente utili per documenti di purotesto si possono applicare anche a ﬁle binari come per esempio le immagini.<br>
+Il versionamento del codice è una **buona pratica** di sviluppo ormai di uso comune,ed è utile da usare anche nel caso di progetti personali in cui si è l’unico sviluppatore.<br>
+È bene non usare la pratica solo per il codice sorgente ma perl’intera **codebase**, che include anche la documentazione, le istruzioni per la costruzione del software(es. compilazione e linking, espresse in Makeﬁle, CMake o altri strumenti), ﬁle di conﬁgurazione,etc.
+
+## Tipi di sistemi di versionamento
+Esistono diversi sistemi per il controllo di versione(version controlsystems-**VCS**):
+1. **Locali**: mantengono un archivio dei cambiamenti del software sul disco del computer usato per lo sviluppo. Ambienti di sviluppo integrato come Eclipse e CLion offrono di default questa funzionalità per i ﬁle di ogni progetto. Hanno il vantaggio di essere molto **facili** da usare perché non è richiesta nessuna attività al programmatore, ma lo svantaggio di **non consentire la collaborazione** con altri utenti, la mancanza di sicurezza dato che offrono una funzione di backup data dalla duplicazione dell’archivio su un’altra macchina e il fatto che la storia della codebase è vista ﬁle per ﬁle,**senza la possibilità di sapere quali ﬁle fossero in quale versione** in un certo momento dello sviluppo.
+2. **Centralizzati**: sono gli strumenti più "tradizionali", come **CVS** o **Subversion**.<br>
+L'archivio è mantenuto su di un **server centrale**, mentre gli sviluppatori lavorano su una copia locale di uno degli stati del software.<br>
+Si usano delle operazioni di **checkout** per prelevare uno stato del sistema dal server(es.la versione più recente),e con un'operazione di **commit** si inviano le proprie modiﬁche per aggiornare lo stato sul server.
+3. **Distribuiti**: sono i sistemi, come **Git** o **Mercurial**, in cui il **sistema locale ha una copia completa** della storia dello sviluppo,per cui si può lavorare con sistema diversionamento **anche senza connessione**.<br>
+Dato che sono distribuiti non si ha più un server centrale di riferimento se non per convenzione comune.
