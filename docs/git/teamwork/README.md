@@ -7,6 +7,10 @@ Per collaborare serve che ogni sviluppatore abbia:
 Tutto questo può essere ottenuto utilizzando i `remotes`.<br>
 Un **remote** è una **shared Git repository**, ovvero messa su di un **server** git.
 
+:::warning
+Nella home tra gli approfondimenti vi sono molti link utili, tra cui uno sulle **best practices** per la gestione dei branch.
+:::
+
 ## git clone
 ```sh{2}
 $ git clone <remote_path> <name> # Clona un progetto (clonandone anche i remote) ed assegna il nuovo nome alla cartella

@@ -15,5 +15,6 @@ Fonti:<br>
 
 Approfondimenti:<br>
 - [Chiavi SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- [Git Best Practices - Medium](https://medium.com/@grazibonizi/the-best-branching-model-to-work-with-git-4008a8098e6a)
 - [W3docs - Learn git](https://www.w3docs.com/learn-git/introduction4.html)
 - [Version Control by Example](https://ericsink.com/vcbe/index.html) Not working? [`Download here`](/assets/vcbe_a4_lo.pdf)
