@@ -11,4 +11,5 @@ Il sorgente si basa sui markdown, ecco una veloce [cheatsheet](https://github.co
 - [Wikipedia CI/CD](https://en.wikipedia.org/wiki/CI/CD)
 
 ## Made with :heart:
-Questo sito è stato realizzato con [vuepress](https://vuepress.vuejs.org/)
+Questo sito è stato realizzato con [vuepress](https://vuepress.vuejs.org/)<br>
+Se vi è stato d'aiuto mettete una :star:!

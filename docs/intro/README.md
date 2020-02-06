@@ -15,3 +15,50 @@ L'archivio è mantenuto su di un **server centrale**, mentre gli sviluppatori la
 Si usano delle operazioni di **checkout** per prelevare uno stato del sistema dal server(es.la versione più recente),e con un'operazione di **commit** si inviano le proprie modiﬁche per aggiornare lo stato sul server.
 3. **Distribuiti**: sono i sistemi, come **Git** o **Mercurial**, in cui il **sistema locale ha una copia completa** della storia dello sviluppo,per cui si può lavorare con sistema diversionamento **anche senza connessione**.<br>
 Dato che sono distribuiti non si ha più un server centrale di riferimento se non per convenzione comune.
+
+## Git vs TFVC(TFS)/Subversion(SVN)
+git rispetto agli altri sistemi di versioning ha una curva di apprendimento maggiore, non è affatto intuitivo inizialmente se si arriva da precedenti esperienze con TFS/SVN.<br>
+> "In the end, it’s all about the quality of people. Git is more powerful but harder"
+
+### DVCS vs CVCS
+Come già visto sopra le differenze tra un sistema di versioning distribuito ed uno centralizzato principali sono:<br>
+
+#### DVCS
+DVCS = Distributed Version Control System<br>
+
+- Ogni developer ha l'intera repo, con l'intera **history** dei cambiamenti, sulla sua macchina e possono modificarla in locale, anche con commit effettive, ovvero salvando le modifiche nella history **OFFLINE**, che può essere poi caricata sul server.<br>
+Riassumendo: tutto è fatto in locale e poi pushato.
+- Le operazioni sono estremamente **veloci** anche a livello di performance :rocket: (commit, visione dei cambiamenti, ...) questo è dato da due fattori:
+  1. dato che non serve aspettare risposte dal server
+  2. dato che git lavora con gli [snapshot](https://stackoverflow.com/questions/4964099/what-is-a-git-snapshot) e non con i cambiamenti
+
+#### CVCS
+CVCS = Centralized Version Control System<br>
+
+- Lo sviluppatore ha una copia della repo, **ma non del versioning**, le azioni offline sono impossibili:
+  - Niente commit offline
+  - Niente visione della history offline
+  - **Niente revert** a vecchie versioni offline
+
+### Check-in vs Commit and Push
+Per fare l'equivalente git del check-in di TFS dobbiamo passare **2 fasi**, questo inizialmente **può sembrare** inutilmente complesso ma aiuta a **migliorare il workflow**: con queste fasi il developer può committare in locale ciò che vuole (codice funzionante ma brutto, commenti...) in modo da **salvare poco alla volta** ogni piccola feature e monitorare al meglio il codice ed all'occorrenza **tornare al punto salvato**. Una volta sistemato completamente il codice lo si può pushare, tenendo sempre e solo codice pulito sul server.
+> "Once I got over the initial Git shock, my working flow became faster. There are a number of reasons for that. First of all, Git itself is really fast. Second, with
+> Git I do local commits which saves me time. I can commit my work in progress code without worrying it’s buggy and will disrupt another developer’s work."<br>
+
+> "The third reason Git made my life better is branches. Creating merges and working on a side branch become a part of my workflow.<br>
+> "I am definitely falling in love with Git. Full disclosure: I also fell in love with TFVC and TFS when I started working with those."
+
+### .gitignore vs .tfignore
+In questo caso è un pareggio, le soluzioni (che aiutano ad escludere dal versioning determinati file) sono pressochè identiche.
+
+### Branches e Merge
+Nella gestione dei branch la potenza di git si nota molto:
+su TFVC(TFS) un branch crea una nuova cartella con una copia dei file del branch padre e per lavorare su quel nuovo branch il developer deve copiare quella directory sul suo hard disk, avendo essenzialmente un altra cartella con quel sorgente.<br>
+Su git ogni branch non è una copia, è un puntatore alla commit. Questo è molto veloce e possibile grazie al fatto che git contiene ogni branch in locale.<br>
+Come detto sopra quindi io posso spostarmi molto velocemente ed **IN LOCALE** da un branch all'altro. (comando checkout)
+
+#### Merging
+Mergiare è un operazione molto leggera in git. Possiamo mergiare ogni branch, mergiando l'intera differenza o la specifica commit, e git ci fornira una gestione dei conflitti (come TFS del resto)
+
+### Last but not least: community
+git ha una community estremamente più vasta, specie di questi tempi. Documentazione ottima(come TFS/SVN) ma soprattutto è più facile incontrare gente esperta di git nelle varie community online.

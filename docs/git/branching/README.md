@@ -5,6 +5,7 @@ Spesso i branch sono utilizzati per aggiungere nuove **feature** e per far lavor
 > Analogia: [Forcola scout](https://it.scoutwiki.org/Forcola])
 ```sh
 $ git branch # Lista dei branch, che evidenzia il branch attivo
+$ git branch --all # Lista di tutti i branch, quelli in rosso sono i branch remoti
 $ git branch <branch> # Crea un nuovo branch, che parte dalla HEAD
 $ git checkout -b <branch> # Crea un nuovo branch, che parte dalla HEAD e cambia il branch attivo in quello appena creato
 $ git checkout <branch> # Cambia il branch attivo
