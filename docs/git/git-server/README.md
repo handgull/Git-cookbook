@@ -32,3 +32,9 @@ Ora è possibile clonare la repo in locale ed utilizzare il server git come `rem
 ```sh
 git clone git@raspberrypi.local:/mnt/disco/git/test.git
 ```
+
+## Comandi utili ad interfacciarsi via SSH
+```sh
+$ nmap -sn 192.168.1.0/24 # Scannerizza la rete per trovare l'ip del raspberry pi
+$ ssh pi@<ip> # Instaura una connessione ssh con il raspberry, password di default: raspberry
+```
