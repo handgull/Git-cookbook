@@ -33,5 +33,6 @@ $ git branch -D <branch> # Cancella il branch (se non è il branch corrente) in 
 > Se il branch corrente è semplicemente più indietro di qualche commit il risultato della merge sarà un **fast forward**
 
 ## Merge conflict
+```
 
 ![git-screenshot-08](../assets/git-screenshot-08.png)
