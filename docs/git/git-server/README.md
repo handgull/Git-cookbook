@@ -35,6 +35,10 @@ git clone git@raspberrypi.local:/mnt/disco/git/test.git
 
 ## Comandi utili ad interfacciarsi via SSH
 ```sh
+# Metodo 1, se ho un solo raspberrypi nella rete ed è identificabile
+$ ping raspberrypi # Se non risponde procedere col metodo 2
+$ ssh pi@raspberrypi # Instaura una connessione ssh con il raspberry, password di default: raspberry
+# Metodo 2 (perchè a volte il raspberry non è identificabile nella rete come raspberry o raspberrypi)
 $ nmap -sn 192.168.1.0/24 # Scannerizza la rete per trovare l'ip del raspberry pi
-$ ssh pi@<ip> # Instaura una connessione ssh con il raspberry, password di default: raspberry
+$ ssh pi@<ip> # password di default: raspberry
 ```
