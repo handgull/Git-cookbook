@@ -42,3 +42,7 @@ $ ssh pi@raspberrypi # Instaura una connessione ssh con il raspberry, password d
 $ nmap -sn 192.168.1.0/24 # Scannerizza la rete per trovare l'ip del raspberry pi
 $ ssh pi@<ip> # password di default: raspberry
 ```
+
+## Spunti per esperimenti futuri:
+- **Dockerizzare** il servizio che si occupa di gestire le directory remote
+- Creare una pipeline **CI/CD**
