@@ -25,7 +25,8 @@ module.exports = {
       serviceWorker: true,
       popupComponent: 'MySWUpdatePopup',
       updatePopup: true
-    }]
+    }],
+    ['vuepress-plugin-code-copy', true]
   ]
 }
 
