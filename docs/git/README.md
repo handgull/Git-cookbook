@@ -14,16 +14,16 @@ Possiamo semplificare (di molto) il workflow di git dividendolo in 3 parti:
 > NOTA: la **Working Directory** è quindi la directory del progetto nello stato attuale
 ```sh
 # Primo utilizzo di git: configurare i dati relativi all'autore
-$ git config --global user.name "Nome Cognome"
-$ git config --global user.email indirizzo@ema.il
+git config --global user.name "Nome Cognome"
+git config --global user.email indirizzo@ema.il
 
-$ git init # init = initialize, inizializza tutti gli strumenti necessari al versioning (nella cartella .git)
-$ git status # Visualizza lo stato del branch
-$ git add <filename> # Aggiunge le modifiche relative al file/ai file alla staging area sopra citata
-$ git add <filename> <otherFilename> ... # Posso specificare anche più di un file alla volta
-$ git add -A # Aggiunge tutte le modifiche pendenti alla staging area
-$ git commit -m"<comment>" # Salva permanentemente come commit le modifiche
-$ git commit --amend -m"<comment>" # Sovrascrive l'ultima commit effettuata, utile per mantenere la history pulita e chiara in caso di piccole sviste
+git init # init = initialize, inizializza tutti gli strumenti necessari al versioning (nella cartella .git)
+git status # Visualizza lo stato del branch
+git add <filename> # Aggiunge le modifiche relative al file/ai file alla staging area sopra citata
+git add <filename> <otherFilename> ... # Posso specificare anche più di un file alla volta
+git add -A # Aggiunge tutte le modifiche pendenti alla staging area
+git commit -m"<comment>" # Salva permanentemente come commit le modifiche
+git commit --amend -m"<comment>" # Sovrascrive l'ultima commit effettuata, utile per mantenere la history pulita e chiara in caso di piccole sviste
 ```
 > **Convenzioni riguardanti i commenti**:<br>
 > - Dovrebbero essere in [Present Tense](https://learnenglish.britishcouncil.org/english-grammar-reference/present-tense)
@@ -42,7 +42,7 @@ Al posto dei nomi dei files volendo si possono usare le [wildcards](https://www.
 
 Git ci permette di vedere le **differenze** tra i files della working directory e la staging area (molti editor/IDE supportano Git e forniscono uno strumento grafico per vedere questo, naturalmente essi si appoggiano al comando fornito da git).
 ```sh
-$ git diff <filename> # Visualizza la lista dei cambiamenti di un file rispetto alla staging area
+git diff <filename> # Visualizza la lista dei cambiamenti di un file rispetto alla staging area
 ```
 
 ![git-screenshot-02](./assets/git-screenshot-02.png)
@@ -53,10 +53,10 @@ Le commit possono essere viste grazie ad uno **storico** (come vedremo, lo stori
 È inoltre possibile per ogni riga di ogni file **sapere chi** (ed in quale commit) ha effettuato l'ultimo cambiamento a quella riga.
 
 ```sh
-$ git blame <filename> # Stampa ogni riga del file, con hash autore e data dell'ultima commit che ha avuto a che fare con quella riga
-$ git log # Stampa a video lo storico delle commit
-$ git log --pretty=oneline # Stampa le commit in formato abbreviato, facendo occupare una sola riga per commit
-$ git log --graph # Stampa a terminale le commit con un grafo che fa capire lo stato dei vari branch
+git blame <filename> # Stampa ogni riga del file, con hash autore e data dell'ultima commit che ha avuto a che fare con quella riga
+git log # Stampa a video lo storico delle commit
+git log --pretty=oneline # Stampa le commit in formato abbreviato, facendo occupare una sola riga per commit
+git log --graph # Stampa a terminale le commit con un grafo che fa capire lo stato dei vari branch
 ```
 
 Screenshot di una sezione dello storico in modalità grafo:
