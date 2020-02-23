@@ -5,7 +5,7 @@ Il versionamento(versioning) del codice, o controllo delle versioni(**version co
 Tipicamente gli strumenti che si usano per il versionamento del codice **facilitano** anche lo **sviluppo concorrente** da parte di più programmatori,facilitando la fusione dei vari contributi e il lavoro di gruppo.<br>
 Gli strumenti per il versionamento del codice si preoccupano di gestire versioni multiple di documenti, e programmi, e sebbene siano particolarmente utili per documenti di puro testo si possono applicare anche a ﬁle binari come per esempio le immagini.<br>
 Il versionamento del codice è una **buona pratica** di sviluppo ormai di uso comune,ed è utile da usare anche nel caso di progetti personali in cui si è l’unico sviluppatore.<br>
-È bene non usare la pratica solo per il codice sorgente ma per l’intera **codebase**, che include anche la documentazione, le istruzioni per la costruzione del software(es. compilazione e linking, espresse in Makeﬁle, CMake o altri strumenti), ﬁle di conﬁgurazione,etc.
+È bene non usare la pratica solo per il codice sorgente ma per l’intera **codebase**, che include anche la documentazione, le istruzioni per la costruzione del software(es. compilazione e linking, espresse in Makeﬁle, CMake o altri strumenti), ﬁle di conﬁgurazione, etc.
 
 ## Tipi di sistemi di versionamento
 Esistono diversi sistemi per il controllo di versione(version controlsystems-**VCS**):
