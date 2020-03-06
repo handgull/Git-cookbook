@@ -18,6 +18,7 @@ Fonti:<br>
 Approfondimenti:<br>
 - [Chiavi SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 - [Git Best Practices - Medium](https://medium.com/@grazibonizi/the-best-branching-model-to-work-with-git-4008a8098e6a)
+- [Should i use gitflow?](https://georgestocker.com/2020/03/04/please-stop-recommending-git-flow/)
 - [Git la guida tascabile](https://rogerdudler.github.io/git-guide/index.it.html)
 - [Git manuale ufficiale](https://git-scm.com/book/it/v2)
 - [W3docs - Learn git](https://www.w3docs.com/learn-git/introduction4.html)
