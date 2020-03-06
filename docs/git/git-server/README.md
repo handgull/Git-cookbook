@@ -46,3 +46,6 @@ ssh pi@<ip> # password di default: raspberry
 ## Spunti per esperimenti futuri:
 - **Dockerizzare** il servizio che si occupa di gestire le directory remote
 - Creare una pipeline **CI/CD**
+::: tip
+Utilizzare un servizio più avanzato simile a github/gitlab: [gitea](https://gitea.io/en-us/) o [gogs]https://gogs.io/
+:::
